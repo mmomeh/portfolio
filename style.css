@@ -2,14 +2,22 @@
  
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+
 * {
     margin: 0;
     padding: 0;
 } 
 
 * body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:"Poppins", sans-serif;
 }
+
+
+
  
 * html {
     scroll-behavior: smooth;
@@ -88,7 +96,7 @@ a:hover{
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease ease-in-out;
+    transition: all 0.3s ease ease-in-out;
  }
 
  .menu-links {
@@ -99,7 +107,7 @@ a:hover{
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
  }
 
  .menu-links a{
@@ -109,7 +117,7 @@ a:hover{
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
  }
 
  .menu-links li {
@@ -143,4 +151,116 @@ a:hover{
  .hamburger-icon span:first-child {
     transform: none;
  }
+
+/* SECTIONS */
+
+section {
+    padding-top: : 4vh;
+    height: 96 vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem
+    margin-bottom: 1rem
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#spectials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, btn-color-2 {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover, btn-color-2:hover {
+    cursor: pointer;
+}
+
+btn-color-1, btn-color-2:hover {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0,0,0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem
+}
 
